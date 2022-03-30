@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #313A49;
+    --text-color-primary: hsl(193, 38%, 86%);
+    --text-color-accent: #51F3A3;
+}
+
+body {
+    background-color: #222834;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    padding: 0 20px;
+}
+
+.advice-card {
+    position: relative;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-shadow: rgb(34 40 52) 0 7px 29px 0;
+}
+
+.advice h1 {
+    color: var(--text-color-accent);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.advice p {
+    font-size: 28px;
+    color: var(--text-color-primary);
+    text-align: center;
+}
+
+a.generate {
+    position: absolute;
+    bottom: -20px;
+    background-color: var(--text-color-accent);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+a.generate:hover {
+    box-shadow: rgb(81 243 163) 0 7px 29px 0;
+}
+
+.divider {
+    color: var(--text-color-primary);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.loading {
+    animation: flickerAnimation 2s infinite;
+}
+
+.divider .icon {
+    margin: 5px;
+}
+
+.divider .line {
+    height: 1px;
+    flex: 1;
+    border-top: .1px solid var(--text-color-primary);
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}

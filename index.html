@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script type="application/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Advice generator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body onload="generate()">
+
+<div class="advice-card">
+    <section class="advice">
+        <h1>advice #</h1>
+        <p></p>
+    </section>
+
+    <section class="divider">
+        <span class="line"></span>
+        <span class="icon material-icons">pause</span>
+        <span class="line"></span>
+    </section>
+
+    <a class="generate" onclick="generate()">
+        <span class="material-icons">casino</span>
+    </a>
+
+</div>
+
+
+</body>
+</html>
